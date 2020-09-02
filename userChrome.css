@@ -1,0 +1,73 @@
+/* Entfernen der Tab Bar*/
+#TabsToolbar .tabbrowser-tab,
+#TabsToolbar .tabs-newtab-button,
+#new-tab-button, #alltabs-button {
+  visibility: collapse !important;
+}
+
+#TabsToolbar .titlebar-buttonbox-container {
+    visibility: visible !important;
+    margin-right: 90%;
+    margin-top: 5px;
+}
+
+/*Entfernen des Sidebar Headers, da nicht benötigt */
+#sidebar-header {
+  visibility: collapse !important;
+}
+
+/*-min max close  buttons size */
+/* adapt size to your needs */
+.titlebar-button>.toolbarbutton-icon {
+	height: 17px !important;
+	min-height: 17px !important;
+	width: 17px !important;
+	min-width: 17px !important;
+}
+
+/* spaces between buttons */
+/*
+.titlebar-button {
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+	padding-top: 10px !important;
+}
+*/
+
+/* Minimieren-Button */
+toolbarbutton.titlebar-button.titlebar-min {
+     color: #e67e22 !important;
+     visibility: visible !important;
+     min-height: 20px;	
+}
+
+toolbarbutton.titlebar-button.titlebar-min:hover {
+     color: black !important;
+     background: #e67e22 !important;	
+}
+
+/* Maximieren-Button */
+toolbarbutton.titlebar-button.titlebar-max,
+toolbarbutton.titlebar-button.titlebar-restore {
+     color: #9b59b6 !important;
+     visibility: visible !important;
+     
+}
+
+toolbarbutton.titlebar-button.titlebar-max:hover,
+toolbarbutton.titlebar-button.titlebar-restore:hover {
+     color: black !important;
+     background: #9b59b6 !important;
+}
+
+/* Schließen-Button */
+toolbarbutton.titlebar-button.titlebar-close {
+     color: #e74c3c !important;
+     visibility: visible !important;
+     	
+}
+
+toolbarbutton.titlebar-button.titlebar-close:hover {
+     color: black !important;
+     background: #e74c3c !important;
+}
