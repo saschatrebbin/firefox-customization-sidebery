@@ -1,4 +1,5 @@
-/* Entfernen der Tab Bar*/
+/* remove the tab bar - which only works, if the objects inside also are not visible */
+#TabsToolbar,
 #TabsToolbar .tabbrowser-tab,
 #TabsToolbar .tabs-newtab-button,
 #new-tab-button, #alltabs-button {
@@ -11,7 +12,7 @@
     margin-top: 5px;
 }
 
-/*Entfernen des Sidebar Headers, da nicht benötigt */
+/* removing the sidebar, since I use Sidebery for that */
 #sidebar-header {
   visibility: collapse !important;
 }
@@ -34,7 +35,7 @@
 }
 */
 
-/* Minimieren-Button */
+/* restyle the minimize button */
 toolbarbutton.titlebar-button.titlebar-min {
      color: #e67e22 !important;
      visibility: visible !important;
@@ -46,7 +47,7 @@ toolbarbutton.titlebar-button.titlebar-min:hover {
      background: #e67e22 !important;	
 }
 
-/* Maximieren-Button */
+/* restyle the maximize button */
 toolbarbutton.titlebar-button.titlebar-max,
 toolbarbutton.titlebar-button.titlebar-restore {
      color: #9b59b6 !important;
@@ -60,7 +61,7 @@ toolbarbutton.titlebar-button.titlebar-restore:hover {
      background: #9b59b6 !important;
 }
 
-/* Schließen-Button */
+/* restyle the close button */
 toolbarbutton.titlebar-button.titlebar-close {
      color: #e74c3c !important;
      visibility: visible !important;
@@ -70,4 +71,9 @@ toolbarbutton.titlebar-button.titlebar-close {
 toolbarbutton.titlebar-button.titlebar-close:hover {
      color: black !important;
      background: #e74c3c !important;
+}
+
+/* disable newtab-button*/
+#tabs-newtab-button {
+     display:none !important;
 }
